@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+  --main-color:#070b3f;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  max-width: 2408px;
+  max-height: 2400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: var(--main-color);
+}
+/* styling for main contaiiner */
+.resume-container{
+  max-width: 100%;
+  width: 80%;
+  max-height: 2000px;
+  height: auto;
+  box-shadow: 0px 0px 10px #2c2c2c;
+}
+/*  styling for resume container's first row */
+.head{
+  height: 250px;
+  width: 100%;
+  background-color:#070b3f;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 5%;
+  color: #DDDDDD;
+}
+/* styling for first div in resume container's first row  */
+.profile{
+  
+  max-width:450px ;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.profile h1{
+  font-size: 1.6rem;
+}
+.profile h4{
+  font-size: 1rem;
+  background: linear-gradient(45deg, #030fb8, #b507cc, #8a098a, #af07e2);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.profile-picture{
+  background-image: url(./images/Girl\ Illustration\ Poster\ Designs.jpeg);
+  background-size: cover;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+/* styling for second div of resume container's first row */
+.contact{
+  width: 390px;
+  height: 120px;
+ display: flex;
+ align-items: center;
+ gap: 0.5rem;
+}
+.contact h4{
+  font-size:1rem ;
+}
+.icons{
+  font-size: 1.5rem;
+  background: linear-gradient(45deg, #030fb8, #b507cc, #8a098a, #af07e2);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+/* styling for third div of resume container's first row */
+.social{
+  width: 250px;
+  height: 113px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+font-size: 1.5rem;
+background: linear-gradient(45deg, #030fb8, #b507cc, #8a098a, #af07e2);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+background-clip: text;
+}
+/* styling for main content of resume */
+.main-content{
+  padding: 5%;
+ 
+}
+.profile-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2%;
+  gap: 15px;
+  height: 300px;
+  border-bottom: 4px solid rgba(37, 32, 32, 0.699);
+ margin-bottom: 2%;
+}
+.profile-para{
+  max-width:2132px ;
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+}
+.profile-para i{
+  font-size: 1.5rem;
+}
+.para{
+  max-width: 2080px;
+  min-height:137px ;
+  width: 100%;
+}
+
+
+.box{
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.skills{
+  margin: 30px auto;
+  max-width:2132px ;
+  width: 100%;
+  height: 250px;
+  gap: 20px;
+  
+}
+
+.skills i{
+  font-size: 1.5rem;
+}
+.skills-heading{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.skills-heading hr{
+  width: 60%;
+}
+.skills-section{
+  width:100%;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  gap: 5px;
+}
+.skill{
+  width: 100%;
+  height: 150px;
+  padding: 2%;
+}
+/* styling for toggle button start */
+#btn-minus{
+  position: relative;
+  left: 95%;
+  font-size: 1rem;
+
+}
+#btn-plus{
+  position: relative;
+  left: 95%;
+  font-size: 1rem;
+  display: none;
+  top: 50%;
+}
+
+/* end  */
+.education{
+  margin: 40px auto;
+  max-width:2132px ;
+  width: 100%;
+  height: 320px;
+}
+.education-heading{
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.education-heading hr{
+  width: 60%;
+}
+.education-heading i{
+  font-size: 1.5rem;
+}
+.education-details{
+  width: 100%;
+  height: 200px;
+  padding:2%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
+}
+.ed-detail{
+  width: 100%;
+  height: 150px;
+  padding: 2%;
+}
+
+.experience-heading hr{
+  width: 70%;
+}
+.experience-heading i{
+  font-size: 1.5rem;
+}
+
+.experience{
+  margin: 40px auto;
+  max-width:2132px ;
+  width: 100%;
+  height: 320px;
+}
+.experience-heading{
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.experience-details{
+  width: 100%;
+  height: 200px;
+
+}
+.experience-details ul{
+  padding: 2%;
+}
+hr{
+  width: 80%;
+  height: 1px;
+  border: none;
+  background-color:var(--main-color);
+}
+
+
+@media screen and (width > 413px) and (width<600px){
+  .resume-container{
+    width: 100%;
+  margin: 20px auto;
+
+  }
+  
+  .icons i{
+  font-size: 1rem;
+  }
+  .head{
+    width: 100%;
+    background-color:#070b3f;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+    gap: 10px;
+    padding: 2%;
+
+  }
+  .profile h1{
+    font-size: 1rem;
+  }
+  .profile h4{
+    font-size: 0.80rem;
+    
+  }
+  .contact h4{
+    font-size: 0.80rem;
+  }
+  .profile-picture{
+ 
+    width: 4rem;
+    height: 4rem;
+  }
+  ul li{
+    font-size: 0.80rem;
+  }
+  p{
+    font-size: 0.80rem
+  }
+}
+@media screen and (width < 450px) {
+  .head{
+    
+      width: 100%;
+      background-color:#070b3f;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction:column;
+      gap: 10px;
+      padding: 2%;
+  
+    
+  }
+  .profile-picture{
+ 
+    width: 5rem;
+    height: 5rem;
+  }
+  .icons i{
+    font-size: 1.5rem;
+  padding:2.5%;  
+  }
+    ul li{
+      font-size: 0.80rem;
+    }
+    p{
+      font-size: 0.80rem
+    }
+    .profile h1{
+      font-size: 1rem;
+    }
+    .profile h4{
+      font-size: 0.80rem;
+      
+    }
+    .contact h4{
+      font-size: 0.80rem;
+    }
+    .contact{
+      gap: 1rem;
+      justify-content: center;
+      padding-left:3%;
+      padding-right:3%;
+    }
+}
