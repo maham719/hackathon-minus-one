@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 body{
-  max-width: 2408px;
+  max-width: 1200px;
   max-height: 2400px;
   width: 100%;
   display: flex;
