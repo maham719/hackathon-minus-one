@@ -63,6 +63,7 @@ body{
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
+  flex-shrink:0;
 }
 /* styling for second div of resume container's first row */
 .contact{
