@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+      
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resume.css">
+</head>
+
+<body >
+    <header>
+        <div>
+        <img src="/images/logo.png" alt="">
+        <h1 class="title ">Dynamic Resume Builder</h1>
+    </div>
+    <a href="#form">Get Started</a>
+    </header>
+    <br>
+    <h1 class="title2">Fill The Form Below And Build Your Resume Right Now!</h1>
+
+    <div class="form-container">
+        <form action="" class="form" id="form">
+
+            <div class="profile">
+                <fieldset>
+                    <legend> <i class="fa-solid fa-file-image"></i> profile picture</legend>
+                    <label for="picture">Select Picture</label>
+                    <input type="file" required id="dp" accept="image/*" />
+                </fieldset>
+            </div>
+            <br>
+
+            <div class="right">
+                <fieldset>
+                    <legend><i class="fa-solid fa-user"></i> Personal Information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="Enter Your Name " required id="myname">
+                    <br>
+                    <label for="profession"> <i class="fa-solid fa-user-tie"></i> Profession:</label>
+                    <input type="text" placeholder="Enter Your Profession " id="profession">
+                    <br>
+                    <label for="phone"> <i class="fa-solid fa-phone-flip"></i> Phone:</label>
+                    <input type="number" placeholder="Enter Your Phone Number" required id="phnumber">
+                    <br>
+                    <label for="email"><i class="fa-solid fa-envelope"></i> Email:</label>
+                    <input type="email" placeholder="Enter Your Email Address" required id="email">
+                    <br>
+                    <label for="address"><i class="fa-solid fa-location-dot"></i> Address:</label>
+                    <input type="text" placeholder="Enter Your Complete Address" required id="address">
+                </fieldset>
+                <br>
+                <fieldset id="experiencefield">
+                    <legend><i class="fa-solid fa-briefcase"></i> Experience</legend>
+                    <textarea name="experience" id="experience"></textarea>
+                    <button class="add" id="btn-exp" type="button">Add More</button>
+                </fieldset>
+
+            </div>
+            <div class="left">
+
+                <fieldset>
+                    <legend><i class="fa-solid fa-bullseye"></i> Objective</legend>
+                    <label for="name"></label>
+                    <textarea name="objective" id="formobjective" rows="4" required id="objective" ></textarea>
+
+                </fieldset>
+                <br>
+                <fieldset id="skillsfield">
+                    <legend><i class="fa-solid fa-gear"></i> Skills</legend>
+                    <textarea name="skills" rows="2" required id="skills"></textarea>
+                    <br>
+                    <button class="add" id="btn-skills" type="button">Add More</button>
+                </fieldset>
+                <br>
+                <fieldset id="educationfield">
+                    <legend><i class="fa-solid fa-graduation-cap"></i> Education</legend>
+                    <textarea name="education" required id="education"></textarea>
+                    <button class="add" id="btn-edu" type="button">Add More</button>
+                </fieldset>
+
+            </div>
+
+        </form>
+        <button  class="generate" id="submitBtn">Generate Resume</button>
+    </div>
+
+    <!-- resume section  -->
+    <div class="resume">
+
+        <div class="main-container">
+
+            <!-- first section  -->
+    <div class="head">
+        <img src="/images/dp.jpeg" alt="" id="cvimage">
+        <div class="intro">
+        <h1 id="cvname" contenteditable="true">Syeda Maham Amjad</h1>
+        <h2 id="cvprofession" contenteditable="true">UI/ UX Designer</h1>
+    </div>
+    <div class="contact">
+     <span>   <i class="fa-solid fa-phone-flip"></i><p id="cvphone" contenteditable="true"> 0336879900</p></span>
+   <span>  <i class="fa-solid fa-envelope"></i><p id="cvemail" contenteditable="true">  syedamahamamjad@gmail.com</p></span>
+  <span> <i class="fa-solid fa-location-dot"></i>  <p id="cvaddress" contenteditable="true"> 	12148 Saratoga Sunnyvale Rd</p></span>
+    </div>
+    </div>
+    <!-- second section  -->
+    <!-- objective  -->
+     <div class="content">
+    <div class="objective">
+    <h1><i class="fa-solid fa-bullseye"></i>  Objective <hr>
+    </h1>
+    <br><br>
+    <p id="cvobjective" contenteditable="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id eveniet optio inventore, odio eligendi neque nihil, illum, fugit est similique facere recusandae! Adipisci officia nulla magnam ut saepe modi.
+    Totam, rem? Voluptatibus quos distinctio nostrum sit minus, delectus laudantium maxime ipsum veniam eum hic quasi atque sint assumenda architecto! Rerum labore, cum numquam commodi unde veritatis quam nobis maxime.</p>
+    
+    </div>
+    <!-- skills  -->
+    <div class="skills">
+        <h1><i class="fa-solid fa-gear"></i>  Skills <hr></h1>
+    <ul id="cvskills">
+    
+    </ul>
+    
+    </div>
+     <!-- education  -->
+    <div class="education ">
+     <h1><i class="fa-solid fa-graduation-cap"></i> Education <hr></h1>
+    <ul id="cveducation" ></ul>
+    </div>
+    
+    <!-- experience  -->
+    <div class="experience">
+    <h1><i class="fa-solid fa-briefcase"></i>  Experience <hr></h1>
+    <ul id="cvexperience" ></ul>
+    
+    </div>
+    
+    </div>    
+        </div>
+      
+       
+        <button  class="Download" id="Download">Download Resume</button>
+      
+      
+    </div>
+    <footer ></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
